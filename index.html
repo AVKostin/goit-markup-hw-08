@@ -513,17 +513,125 @@
             </ul>
           </div>
         </section>
+        <section class="subscribe">
+          <form  action="#" class="subscribe-form">
+            <b class="subscribe-title">Подпишитесь на рассылку</b>
+            <input type="email" name="name" placeholder="E-mail" class="subscribe-input" />
+            <button class="subscribe-btn btn">Подписаться  <svg class="social-icon-footer" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg></button>
+          </form>
+        </section>
 
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    
+    <div class="backdrop is-hidde-n" data-modal>
+      
       <div class="modal">
-          <button type="button" class="close-btn" data-modal-close>
+        <button type="button" class="close-btn" data-modal-close>
             <svg class="close-black" width="18" height="18">
                     <use href="./images/sprite.svg#icon-close-black"></use>
                   </svg></button>
-      </div>
-    </div>
-  <script src="./js/modal.js"></script>
+                  
+                  
+
+
+                  <form class="js-speaker-form">
+
+                    <div class="form form-field">
+                      <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+                      <label for="name" class="form-input">Имя </label> 
+                        <input type="text" name="name" id="name" placeholder="Иван Иванович" class="input-label" />
+                      
+                      <label for="tel" class="form-input">Телефон  </label> 
+                        <input type="tel" name="tel" id="tel" placeholder="+380(00)-000-00-00" class="input-label" />
+                      
+                      <label for="mail" class="form-input">Почта  </label> 
+                        <input type="email" name="email" id="mail" placeholder="Почта" class="input-label" />
+
+                        <label type="comment" class="form-input">Комментарий </label> 
+                        <textarea name="comment" id="comment" class="comment" placeholder="Введите текст" class="form-input-text"></textarea>
+                      </div>
+                      
+                  </form>
+
+
+
+
+
+
+
+                    
+
+  <!--  -->
+  <!--  -->
+  <!--  -->
+<!--   
+                    <div class="form-field">
+                          <label for="name" class="label">Имя</label>
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Иван Иваныч"
+                            autofocus
+                          />
+                  </div>
+
+                  <div class="form-field">
+                      <label for="tel">Телефон</label>
+                      <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
+                  </div>
+
+                  <div class="form-field">
+                      <label for="mail">Почта</label>
+                      <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+                  </div>
+                  
+                  <div class="form-field">
+                    <label for="comment">Комментарий</label>
+                    <textarea
+                      class="comment"
+                      name="comment"
+                      id="comment"
+                      rows="8"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </div>
+
+                  <div class="form-field">
+                    <input class="checkbox" type="checkbox" name="policy" id="policy" />
+                    <label class="policy" for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                  </div>
+                  <div class="btn-form"><button class="header-btn btn" data-modal-open type="button">Отправить</button>
+                  </div>
+
+      </div>     
+     </div>
+ 
+    </form> -->
+ 
+ <!--  -->
+ <!-----> 
+
+
+
+    <!-- <script src="./js/modal.js"></script> -->
+
+   <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+         });
+      })();
+    </script>
+
   </body>
 </html>
