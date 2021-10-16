@@ -597,7 +597,8 @@ body {
 
 .subscribe-form {
   width: 570px;
-  height: 86px;
+  height: 100px;
+  /* position: relative; */
 }
 
 .subscribe-title {
@@ -617,7 +618,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background: transparent;
-  /* display: flex; */
+  display: flex;
 }
 
 .subscribe-input:focus {
@@ -636,8 +637,51 @@ body {
 }
 
 .subscribe-btn {
-  margin: 0;
+  /* font-family: inherit; */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  width: 200px;
   color: #ffffff;
+  display: block;
+  position: relative;
+  /* align-items: left; */
+  height: 50px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 16px;
+}
+
+/* 
+.btn {
+  padding: 10px 32px;
+ 
+
+  
+ 
+  
+  cursor: pointer;
+  transition: color 300ms linear, background-color 300ms linear,
+    box-shadow 300ms linear;
+} */
+
+.check-border {
+  display: flex;
+}
+
+.check-icon {
+  position: absolute;
+  /* transform: translateY(0%); */
+  right: 28px;
+
+  /* padding-left: 10px; */
+  /* padding-right: 28px; */
 }
 
 /*  --------- End of Footer  -------------- */
