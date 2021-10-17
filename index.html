@@ -472,7 +472,6 @@
           </address>
         </section>
 
-
         <section class="footer-social-section">
           <div class="footer-social-list">
             <p class="footer-contact-title">Присоединяйтесь</p>
@@ -515,17 +514,21 @@
         </section>
 
         <!-- <section class="subscribe"> -->
-          <span class="check-border"></span>
+          <!-- <span class="check-border"></span> -->
+          
           <form  action="#" class="subscribe-form">
             <b class="subscribe-title">Подпишитесь на рассылку</b>
-                <input type="email" name="name" id="subscribe" placeholder="E-mail" class="subscribe-input" />
+            <div class="subscribe-form-wrapper">
+              <input type="email" name="name" id="subscribe" placeholder="E-mail" class="subscribe-input" />
                   <button class="subscribe-btn">Подписаться
-                      <svg class="check-icon" width="24" height="24">
+                      <svg class="subscribe-icon" width="24" height="24">
                           <use href="./images/sprite.svg#icon-send"></use>
                       </svg>
                   </button>
-    
-          </form></span>
+            </div>
+        </form>
+        
+        <!-- </span> -->
         <!-- </section> -->
 
       </div>
@@ -540,8 +543,9 @@
                   </svg></button>
                   <form class="js-speaker-form">
       
-      <form class="js-speaker-form">
+      
       <div class="form form-field">
+      <form class="js-speaker-form">      
         <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
 
         <label for="name" class="form-input">Имя</label>
@@ -595,7 +599,7 @@
         
         <span class="checkbox-mailing">
           <input type="checkbox" id="mailing" class="modal-checkbox visually-hidden" />
-            <label for="mailing"  class="text-mailing">
+          <label for="mailing"  class="text-mailing">
               <span class="check-border">
                   <svg class="check-icon" width="11" height="8">
                     <use href="./images/sprite.svg#icon-check"></use>
@@ -606,13 +610,12 @@
             </label>
         </span>
 
-        <button type="submit" class="btn header-btn modal-btn">
+        <button type="submit" class="btn modal-btn">
           Отправить
         </button>
+        </form> 
       </div>
-    </form> 
-                  
-                  <!-- <form class="js-speaker-form">
+                    <!-- <form class="js-speaker-form">
 
                     <div class="form form-field">
                       <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
@@ -630,9 +633,7 @@
                       </div>
                       
                   </form> -->
-
   <!-----> 
-
     <script src="./js/modal.js"></script>
 
     <script>
@@ -641,11 +642,9 @@
           .querySelector(".js-speaker-form")
           .addEventListener("submit", (e) => {
             e.preventDefault();
-
             new FormData(e.currentTarget).forEach((value, name) =>
               console.log(`${name}: ${value}`)
             );
-
             e.currentTarget.reset();
           });
       })();
