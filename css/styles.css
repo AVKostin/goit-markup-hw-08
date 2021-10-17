@@ -612,6 +612,7 @@ body {
 }
 
 .subscribe-input {
+  padding: 10px;
   margin-right: 25px;
   width: 358px;
   height: 50px;
@@ -621,6 +622,7 @@ body {
   display: flex;
   outline: none;
   transition: border-color 300ms linear;
+  color: #ffffff;
 }
 
 .subscribe-input:hover,
