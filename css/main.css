@@ -246,7 +246,7 @@ body {
   transition: color 300ms linear, background-color 300ms linear, box-shadow 300ms linear;
 }
 
-.btn-port:hover {
+.btn-port:hover .btn-port:focus {
   color: var(--accent-color);
   box-shadow: var(--box-shadow);
 }
@@ -518,12 +518,12 @@ textarea {
   margin-bottom: -30px;
 }
 
-.our-projects-list-wrapper {
+.our-projects-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.our-projects-list-name {
+.our-projects-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -532,13 +532,13 @@ textarea {
   padding-bottom: 4px;
 }
 
-.our-projects-list-description {
+.our-projects-description {
   font-size: 16px;
   line-height: 1.87;
   color: var(--third-text-color);
 }
 
-.our-projects-list-item {
+.our-projects-item {
   display: block;
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
@@ -546,7 +546,7 @@ textarea {
   transition: box-shadow 300ms linear;
 }
 
-.our-projects-list-item:hover, .our-projects-list-item:focus {
+.our-projects-item:hover, .our-projects-item:focus {
   box-shadow: var(--box-shadow);
   transform: translateY(0);
 }
@@ -843,12 +843,12 @@ textarea {
   margin-bottom: -30px;
 }
 
-.our-projects-list-wrapper {
+.our-projects-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.our-projects-list-name {
+.our-projects-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -857,13 +857,13 @@ textarea {
   padding-bottom: 4px;
 }
 
-.our-projects-list-description {
+.our-projects-description {
   font-size: 16px;
   line-height: 1.87;
   color: var(--third-text-color);
 }
 
-.our-projects-list-item {
+.our-projects-item {
   display: block;
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
@@ -871,7 +871,7 @@ textarea {
   transition: box-shadow 300ms linear;
 }
 
-.our-projects-list-item:hover, .our-projects-list-item:focus {
+.our-projects-item:hover, .our-projects-item:focus {
   box-shadow: var(--box-shadow);
   transform: translateY(0);
 }
