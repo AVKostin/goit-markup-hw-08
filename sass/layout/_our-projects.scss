@@ -3,34 +3,37 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
-}
 
-.our-projects-item {
-  display: block;
-  margin-left: 30px;
-  flex-basis: calc(100% / 3 - 30px);
-  margin-bottom: 30px;
-  transition: box-shadow 300ms linear;
-}
+  &-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  &-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+    padding-bottom: 4px;
+  }
+  &-description {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--third-text-color);
+  }
 
-.our-projects-item:hover,
-.our-projects-item:focus {
-  box-shadow: var(--box-shadow);
-  transform: translateY(0);
-}
-
-.our-projects-item:hover .projects-top-text,
-.our-projects-item:focus .projects-top-text {
-  box-shadow: var(--box-shadow);
-  transform: translateY(0);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-/* ---------- Portfolio Our Projects---------- */
-
-.our-projects-wrapper {
-  position: relative;
-  overflow: hidden;
+  &-item {
+    display: block;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-bottom: 30px;
+    transition: box-shadow 300ms linear;
+    &:hover,
+    &:focus {
+      box-shadow: var(--box-shadow);
+      transform: translateY(0);
+    }
+  }
 }
 
 .projects-top-text {
@@ -47,19 +50,11 @@
   transition: transform 300ms linear;
 }
 
-.our-projects-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
-  padding-bottom: 4px;
-}
-
-.our-projects-description {
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--third-text-color);
+.our-projects-item:hover .projects-top-text,
+.our-projects-item:focus .projects-top-text {
+  box-shadow: var(--box-shadow);
+  transform: translateY(0);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .cards-border {
