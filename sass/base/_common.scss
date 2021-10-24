@@ -1,0 +1,27 @@
+/* ---------- Container and base style---------- */
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  /* width: 1600px; */
+}
+
+.link {
+  text-decoration: none;
+  transition: color 300ms linear, background-color 300ms linear;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
