@@ -1,14 +1,36 @@
 .our-projects {
+  // width: 1200px;
+
   &-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: -30px;
+    margin-top: -30px;
+    justify-content: stretch;
   }
+  // &-list:not(:last-child) {
+  //   justify-content: center;
+  // }
+
   &-wrapper {
     position: relative;
     overflow: hidden;
+    background-size: cover;
+    @media screen and (max-width: 480px) {
+      outline: 1px solid red;
+      // width: 450px;
+      max-width: 450px;
+      width: auto;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
   }
+
   &-name {
     font-weight: 700;
     font-size: 18px;
@@ -17,6 +39,7 @@
     color: var(--secondary-text-color);
     padding-bottom: 4px;
   }
+
   &-description {
     font-size: 16px;
     line-height: 1.87;
@@ -26,16 +49,47 @@
   &-item {
     display: block;
     margin-left: 30px;
+    margin-top: 30px;
     flex-basis: calc(100% / 3 - 30px);
     margin-bottom: 30px;
     transition: box-shadow 300ms linear;
-    &:hover,
-    &:focus {
-      box-shadow: var(--box-shadow);
-      transform: translateY(0);
-    }
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--box-shadow);
+    transform: translateY(0);
   }
 }
+
+.cardsholder {
+  margin-top: 15px;
+  outline: 2px solid green;
+  @media screen and (min-width: 768px) {
+  }
+}
+.cards-border {
+  padding: 20px 24px;
+  height: 110px;
+  flex-wrap: wrap;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 0;
+
+  @media screen and (max-width: 768px) {
+    outline: 1px solid red;
+    width: 450px;
+    height: 146px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
 .projects-top-text {
   font-size: 16px;
   color: var(--primary-title-color);
@@ -55,15 +109,4 @@
   box-shadow: var(--box-shadow);
   transform: translateY(0);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.cards-border {
-  padding: 20px 24px;
-  width: 370px;
-  height: 110px;
-  flex-wrap: wrap;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-top: 0;
 }

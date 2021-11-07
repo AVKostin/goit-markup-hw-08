@@ -1,0 +1,69 @@
+.our-projects {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  &-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  &-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+    padding-bottom: 4px;
+  }
+  &-description {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--third-text-color);
+  }
+
+  &-item {
+    display: block;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-bottom: 30px;
+    transition: box-shadow 300ms linear;
+    &:hover,
+    &:focus {
+      box-shadow: var(--box-shadow);
+      transform: translateY(0);
+    }
+  }
+}
+.projects-top-text {
+  font-size: 16px;
+  color: var(--primary-title-color);
+  line-height: 1.5;
+  padding: 20px;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+}
+
+.our-projects-item:hover .projects-top-text,
+.our-projects-item:focus .projects-top-text {
+  box-shadow: var(--box-shadow);
+  transform: translateY(0);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.cards-border {
+  padding: 20px 24px;
+  width: 370px;
+  height: 110px;
+  flex-wrap: wrap;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 0;
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- External Styles table  -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      rel="stylesheet"
+    />
+
+    <!--End Of External Styles table  -->
+
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--              Хедер навигация            -->
+    <header class="header header-border">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="index.html" class="header-logo link accent"
+            >Web<span class="header-logo-text">Studio</span></a
+          >
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-item">
+              <a
+                class="header-link link current currentLink"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--             хедер контакты                    -->
+
+        <div class="header-contacts">
+          <a
+            href="mailto:info@devstudio.com"
+            class="header-contacts-link link accent"
+          >
+            <svg class="header-icon" width="16" height="12">
+              <use href="./images/sprite.svg#icon-envelope-hover"></use></svg
+            >info@devstudio.com</a
+          >
+          <a
+            class="header-contacts-link link tel-color"
+            href="tel:+380961111111"
+          >
+            <svg class="header-icon" width="10" height="16">
+              <use href="./images/sprite.svg#icon-smartphone"></use></svg
+            >+38 096 111 11 11</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--      Сеция - портфолио, наши проекты     -->
+
+      <section class="section">
+        <div class="container">
+          <h2 class="visually-hidden">Как бы заголовок секции</h2>
+
+          <!--       Блок кнопок секции портфолио        -->
+
+          <ul class="portfolio-btn-list list">
+            <li class="portfolio-btn-item">
+              <button class="portfolio-btn btn-port" type="button">Все</button>
+            </li>
+
+            <li>
+              <button class="portfolio-btn btn-port" type="button">
+                Веб-сайты
+              </button>
+            </li>
+
+            <li>
+              <button class="portfolio-btn btn-port" type="button">
+                Приложения
+              </button>
+            </li>
+
+            <li>
+              <button class="portfolio-btn btn-port" type="button">
+                Дизайн
+              </button>
+            </li>
+
+            <li>
+              <button class="portfolio-btn btn-port" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <!--           Список проектов               -->
+
+          <ul class="our-projects-list list">
+            <li class="our-projects-item">
+              <div class="our-projects-wrapper">
+                <img
+                  src="./images/project-1.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum dolorum dignissimos sit repellat rerum veniam ipsum
+                  facere rem illo natus?
+                </p>
+              </div>
+              <div class="cards-border">
+                <h3 class="our-projects-name">Технокряк</h3>
+                <p class="our-projects-description">Веб-сайт</p>
+              </div>
+            </li>
+
+            <li class="our-projects-item">
+              <div class="our-projects-wrapper">
+                <img
+                  src="./images/project-2.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum dolorum dignissimos sit repellat rerum veniam ipsum
+                  facere rem illo natus?
+                </p>
+              </div>
+              <div class="cards-border">
+                <h3 class="our-projects-name">
+                  Постер <span lang="en">Orlean vs Golden Star</span>
+                </h3>
+                <p class="our-projects-description">Дизайн</p>
+              </div>
+            </li>
+
+            <li class="our-projects-item">
+              <div class="our-projects-wrapper">
+                <img
+                  src="./images/project-3.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum dolorum dignissimos sit repellat rerum veniam ipsum
+                  facere rem illo natus?
+                </p>
+              </div>
+              <div class="cards-border">
+                <h3 class="our-projects-name">
+                  Ресторан <span lang="en">Seafood</span>
+                </h3>
+                <p class="our-projects-description">Приложение</p>
+              </div>
+            </li>
+
+            <li class="our-projects-item">
+              <div class="our-projects-wrapper">
+                <img
+                  src="./images/project-4.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum dolorum dignissimos sit repellat rerum veniam ipsum
+                  facere rem illo natus?
+                </p>
+              </div>
+              <div class="cards-border">
+                <h3 class="our-projects-name">
+                  Проект <span lang="en">Prime</span>
+                </h3>
+                <p class="our-projects-description">Маректинг</p>
+              </div>
+            </li>
+
+            <li class="our-projects-item">
+              <div class="our-projects-wrapper">
+                <img
+                  src="./images/project-5.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum dolorum dignissimos sit repellat rerum veniam ipsum
+                  facere rem illo natus?
+                </p>
+              </div>
+              <div class="cards-border">
+                <h3 class="our-projects-name">
+                  Проект <span lang="en">Boxes</span>
+                </h3>
+                <p class="our-projects-description">Приложение</p>
+              </div>
+            </li>
+
+            <li class="our-projects-item">
+              <div class="our-projects-wrapper">
+                <img
+                  src="./images/project-6.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum dolorum dignissimos sit repellat rerum veniam ipsum
+                  facere rem illo natus?
+                </p>
+              </div>
+              <div class="cards-border">
+                <h3 class="our-projects-name">
+                  <span lang="en">Inspiration has no Borders</span>
+                </h3>
+                <p class="our-projects-description">Веб-сайт</p>
+              </div>
+            </li>
+
+            <li class="our-projects-item">
+              <div class="our-projects-wrapper">
+                <img
+                  src="./images/project-7.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum dolorum dignissimos sit repellat rerum veniam ipsum
+                  facere rem illo natus?
+                </p>
+              </div>
+              <div class="cards-border">
+                <h3 class="our-projects-name">
+                  Издание <span lang="en">Limited Edition</span>
+                </h3>
+                <p class="our-projects-description">Дизайн</p>
+              </div>
+            </li>
+
+            <li class="our-projects-item">
+              <div class="our-projects-wrapper">
+                <img
+                  src="./images/project-8.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum dolorum dignissimos sit repellat rerum veniam ipsum
+                  facere rem illo natus?
+                </p>
+              </div>
+              <div class="cards-border">
+                <h3 class="our-projects-name">
+                  Проект <span lang="en">LAB</span>
+                </h3>
+                <p class="our-projects-description">Маркетинг</p>
+              </div>
+            </li>
+
+            <li class="our-projects-item">
+              <div class="our-projects-wrapper">
+                <img
+                  src="./images/project-9.jpg"
+                  alt="Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="projects-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum dolorum dignissimos sit repellat rerum veniam ipsum
+                  facere rem illo natus?
+                </p>
+              </div>
+              <div class="cards-border">
+                <h3 lang="en" class="our-projects-name">Growing Business</h3>
+                <p class="our-projects-description">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--       адреса, телефоны, мэйлы      -->
+
+    <footer class="footer">
+      <div class="container footer-contacts-wrap">
+        <section class="contacts">
+          <a href="./index.html" class="footer-logo link accent"
+            >Web<span class="footer-logo-text">Studio</span></a
+          >
+          <address>
+            <ul class="footer-list list">
+              <li class="adress-ident">
+                <a href="" class="adress link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+
+              <li class="adress-ident">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-contact-link link"
+                  >info@example.com</a
+                >
+              </li>
+
+              <li class="adress-ident">
+                <a href="tel:+380991111111" class="footer-contact-link link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </section>
+
+        <!--                  Секция контактов соцсетей              -->
+
+        <section class="footer-social-section">
+          <div class="footer-social-list">
+            <p class="footer-contact-title">Присоединяйтесь</p>
+            <ul class="our-commands-list social-list list">
+              <li class="social-item">
+                <a href="" class="social-link-footer link">
+                  <svg class="social-icon-footer" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-item">
+                <a href="" class="social-link-footer link">
+                  <svg class="social-icon-footer" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+
+              <li class="social-item">
+                <a href="" class="social-link-footer link">
+                  <svg class="social-icon-footer" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+
+              <li class="social-item">
+                <a href="" class="social-link-footer link">
+                  <svg class="social-icon-footer" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <form action="#" class="subscribe-form">
+          <b class="subscribe-title">Подпишитесь на рассылку</b>
+          <div class="subscribe-form-wrapper">
+            <input
+              type="email"
+              name="name"
+              id="subscribe"
+              placeholder="E-mail"
+              class="subscribe-input"
+            />
+            <button class="subscribe-btn">
+              Подписаться
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <!--     End of FOOTER -->
+  </body>
+</html>

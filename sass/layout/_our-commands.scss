@@ -1,19 +1,72 @@
-/* ---------- Our Commands ---------- */
+.our-comm-list {
+  margin-left: -30px;
+  margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.our-commands-item {
+  //   border: 1px solid red;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: #fff;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
 
 .our-commands {
-  width: auto;
   background-color: #f5f4fa;
 }
+
+// .cardholder {
+//   //   margin-bottom: 15px;
+//   border: 1px solid red;
+//   @media screen and (min-width: 480px) {
+//     width: 450px;
+//     background-color: teal;
+//     // margin-bottom: 15px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 270px;
+//     background-color: aqua;
+//     // margin-right: 20px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 270px;
+//     background-color: burlywood;
+//   }
+// }
+
+// .our-commands {
+//   @media screen and (min-width: 768px) {
+//     // background-color: #f5f4fa;
+//   }
+// }
 
 .our-commands-title,
 .our-technology-title,
 .regular-clients-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--secondary-title-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .commands-border {
@@ -22,18 +75,11 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-commands-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.our-commands-item {
-  margin: 0 auto;
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-}
-.our-comands-bottom {
-  padding-bottom: 30px;
+.our-commands-bottom {
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .our-commands-name {

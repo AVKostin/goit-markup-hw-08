@@ -18,11 +18,15 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: calc(30 / 20);
   color: #212121;
   display: block;
   text-align: center;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+  }
 }
 
 .form {
@@ -30,7 +34,6 @@
 }
 
 .form-field {
-  width: 448px;
   & input,
   textarea {
     width: 100%;
@@ -46,6 +49,9 @@
     letter-spacing: 0.01em;
     color: #afb1b8;
     outline: none;
+    @media screen and (min-width: 1200px) {
+      width: 448px;
+    }
   }
 }
 

@@ -1,17 +1,36 @@
 /* ---------- Footer ---------- */
 .footer {
+  margin: 0 auto;
   padding-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
   background-color: #2f303a;
-  width: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 180px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
 }
+
 .adress-ident {
   padding-bottom: 8px;
 }
+
 .footer-list {
   padding-top: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    padding-top: 20px;
+    text-align: left;
+  }
 }
+
 .footer-logo {
+  display: block;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -29,7 +48,12 @@
   &:focus &-text {
     color: var(--accent-color);
   }
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
+
 .adress {
   font-style: normal;
   font-weight: normal;
@@ -41,9 +65,24 @@
     color: var(--accent-color);
   }
 }
+
 .footer-contacts-wrap {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // outline: 1px solid blue;
+
+  @media screen and (mxn-width: 480px) {
+    flex-basis: calc(100% / 3);
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
+
 .footer-contact-link {
   font-style: normal;
   font-size: 14px;
@@ -55,8 +94,9 @@
     color: var(--accent-color);
   }
 }
-.footer-contact-title,
-.subscribe-title {
+
+.footer-contact-title {
+  display: block;
   margin-bottom: 20px;
   padding-top: 15px;
   font-weight: 700;
@@ -64,8 +104,40 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding-top: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
+
 .footer-social-section {
-  display: flex;
-  margin-right: 93px;
+  // display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 350px;
+
+  @media (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 768px) {
+    // margin-right: 93px;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    // width: 365px;
+    width: calc(100% / 2 - 30px);
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 93px;
+    // padding-top: 0px;
+    // padding-bottom: 0px;
+    width: auto;
+  }
 }

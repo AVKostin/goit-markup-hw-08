@@ -1,5 +1,5 @@
 .subscribe-form {
-  width: 570px;
+  // display: block;
   height: 100px;
   & input::placeholder {
     padding-left: 16px;
@@ -10,23 +10,39 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 }
 
 .subscribe-title {
   display: block;
+  margin-bottom: 20px;
+  padding-top: 15px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    padding-top: 10px;
+  }
 }
 
 .subscribe-input {
+  width: 450px;
   padding: 10px;
   margin-right: 25px;
-  width: 358px;
+  // width: 450px;
+  // width: 480px;
   height: 50px;
+  margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background: transparent;
@@ -34,6 +50,17 @@
   outline: none;
   transition: border-color 300ms linear;
   color: #ffffff;
+  margin-bottom: 20px;
+  justify-content: center;
+
+  // @media screen and (max-width: 450px) {
+  //   width: 100%;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+  }
   &:hover,
   &:focus {
     border-color: var(--accent-color);
@@ -42,25 +69,25 @@
 }
 
 .subscribe-btn {
+  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   background: var(--accent-color);
-  border: none;
   border-radius: 4px;
   width: 200px;
   color: #ffffff;
   display: block;
   position: relative;
   height: 50px;
-  width: 187px;
-  display: flex;
   align-items: center;
-  text-align: center;
-  padding-left: 16px;
-  margin-right: 0;
+  padding-right: 35px;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: relative;
+  }
   &:hover,
   &:focus {
     fill: var(--accent-color);
@@ -71,12 +98,31 @@
 
 .subscribe-icon {
   position: absolute;
-  right: 28px;
+  top: 50%;
+  transform: translate(30%, -50%);
+  border-bottom-left-radius: 4px;
+  // @media screen and (min-width: 1200px) {
+  //   right: 28px;
+  // }
+}
+.subscribe {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe-form-wrapper {
-  position: relative;
-  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    display: flex;
+  }
 }
 
 .check-border {

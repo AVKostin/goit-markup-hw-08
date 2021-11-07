@@ -1,11 +1,16 @@
 /* ---------- Header ---------- */
 .header {
-  width: 100%;
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    margin: 0 auto;
+  }
   &-container {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
   }
   &-border {
     border-bottom: 1px solid #ececec;
@@ -17,18 +22,33 @@
   &-list {
     display: flex;
     align-items: center;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
   &-contacts {
     margin-left: auto;
-    display: flex;
     align-items: center;
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding-bottom: 21px;
+    padding-top: 21px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
   }
   &-item {
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding-bottom: 21px;
+    padding-top: 21px;
     position: relative;
+    @media screen and (min-width: 1200px) {
+      // display: flex;
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
     &:not(:last-child) {
       margin-right: 40px;
     }
@@ -36,29 +56,51 @@
 }
 
 .header-contacts-link {
+  display: block;
   font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+
+  margin-left: 84px;
   &:not(:last-child) {
-    margin-right: 40px;
+    margin-bottom: 10px;
   }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 40px;
+      margin-bottom: 0px;
+    }
+    display: flex;
+    margin-left: 0;
+  }
+
   &:hover .header-icon,
   &:focus .header-icon {
     fill: var(--accent-color);
   }
 }
+
 .header-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: calc(47 / 40);
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
   color: var(--header-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-text-color);
+  }
   transition: color 300ms linear;
   &:hover,
   &:focus {
@@ -84,5 +126,11 @@
   border-radius: 2px;
   background-color: var(--accent-color);
   display: block;
-  bottom: 0;
+  bottom: -10px;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 0;
+  }
 }
