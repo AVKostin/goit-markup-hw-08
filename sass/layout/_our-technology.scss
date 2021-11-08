@@ -18,4 +18,29 @@
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
   }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.our-technology-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.technology-text {
+  padding: 27px;
+  width: 100%;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

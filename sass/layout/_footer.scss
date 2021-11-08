@@ -70,7 +70,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // outline: 1px solid blue;
+  // outline: 3px solid blue;
 
   @media screen and (mxn-width: 480px) {
     flex-basis: calc(100% / 3);
@@ -115,29 +115,24 @@
 }
 
 .footer-social-section {
-  // display: flex;
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 350px;
+  width: 100%;
 
   @media (min-width: 480px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
   @media (min-width: 768px) {
-    // margin-right: 93px;
     justify-content: space-between;
     padding-top: 0px;
     padding-bottom: 0px;
-    // width: 365px;
     width: calc(100% / 2 - 30px);
   }
 
   @media (min-width: 1200px) {
     margin-right: 93px;
-    // padding-top: 0px;
-    // padding-bottom: 0px;
     width: auto;
   }
 }

@@ -1,5 +1,7 @@
 /* ---------- Header ---------- */
 .header {
+  width: 100%;
+  align-items: center;
   @media screen and (min-width: 1200px) {
     align-items: center;
     margin: 0 auto;
@@ -7,10 +9,6 @@
   &-container {
     display: flex;
     align-items: center;
-    @media screen and (max-width: 767px) {
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
   }
   &-border {
     border-bottom: 1px solid #ececec;
@@ -22,22 +20,18 @@
   &-list {
     display: flex;
     align-items: center;
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
   }
   &-contacts {
     margin-left: auto;
     align-items: center;
-    padding-bottom: 21px;
-    padding-top: 21px;
     @media screen and (max-width: 767px) {
       display: none;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
-      padding-bottom: 32px;
-      padding-top: 32px;
     }
   }
   &-item {
@@ -66,8 +60,7 @@
   &:focus {
     color: var(--accent-color);
   }
-
-  margin-left: 84px;
+  margin-left: auto;
   &:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -88,7 +81,7 @@
 }
 
 .header-link {
-  font-size: 40px;
+  // font-size: 40px;
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   margin-bottom: 32px;
@@ -127,7 +120,7 @@
   background-color: var(--accent-color);
   display: block;
   bottom: -10px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 1200px) {
