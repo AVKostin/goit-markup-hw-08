@@ -22,22 +22,42 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(..//images/herobg/herobg-mob-2x.png);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(..//images/herobg/herobg-mob-2x.png);
   }
   @media screen and (min-width: 768px) {
-    background-image: url(..//images/herobg/herobg-tab.png);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(..//images/herobg/herobg-tab.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(..//images/herobg/herobg-tab-2x.png);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(..//images/herobg/herobg-tab-2x.png);
     }
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(..//images/herobg/herobg.png);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(..//images/herobg/herobg.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(..//images/herobg/herobg-2x.png);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(..//images/herobg/herobg-2x.png);
     }
   }
 }
