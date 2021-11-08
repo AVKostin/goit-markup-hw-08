@@ -949,12 +949,6 @@ textarea {
   padding-bottom: 0px;
 }
 
-@media screen and (min-width: 1200px) {
-  .feature {
-    padding-bottom: 47px;
-  }
-}
-
 .feature__title {
   max-width: 450px;
   text-align: center;
@@ -1142,7 +1136,7 @@ textarea {
 }
 
 .our-technology {
-  padding-top: 47px;
+  padding-top: 0px;
 }
 
 .our-technology__title {
