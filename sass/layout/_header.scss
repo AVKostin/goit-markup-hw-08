@@ -81,13 +81,13 @@
 }
 
 .header-link {
-  // font-size: 40px;
+  font-size: 40px;
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   margin-bottom: 32px;
   color: var(--header-text-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
