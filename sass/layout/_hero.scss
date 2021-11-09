@@ -14,10 +14,10 @@
   background-size: cover;
   padding-bottom: 118px;
   padding-top: 118px;
-  // @media screen and (min-width: 1200px) {
-  //   padding-bottom: 200px;
-  //   padding-top: 200px;
-  // }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),

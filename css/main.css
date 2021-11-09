@@ -73,13 +73,13 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    width: 768px;
   }
 }
 
@@ -893,6 +893,13 @@ textarea {
   padding-top: 118px;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/herobg/herobg-mob-2x.png);
@@ -1172,6 +1179,7 @@ textarea {
 }
 
 .technology-text {
+  font-weight: 700;
   padding: 27px;
   width: 100%;
   font-size: 14px;
@@ -1192,7 +1200,6 @@ textarea {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  justify-content: center;
 }
 
 .our-projects-wrapper {
@@ -1239,7 +1246,6 @@ textarea {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
-  margin-bottom: 30px;
   transition: box-shadow 300ms linear;
 }
 
