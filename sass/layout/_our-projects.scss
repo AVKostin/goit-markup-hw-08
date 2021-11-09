@@ -54,6 +54,7 @@
     flex-basis: calc(100% / 3 - 30px);
     // margin-bottom: 30px;
     transition: box-shadow 300ms linear;
+    z-index: 1;
   }
 
   // &:hover,

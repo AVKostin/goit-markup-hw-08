@@ -40,6 +40,7 @@
   position: absolute;
   padding: 48px 40px;
   display: flex;
+  z-index: 2;
   @media screen and (max-width: 767px) {
     overflow: hidden;
   }
@@ -49,6 +50,7 @@
 }
 
 .menu-link {
+  font-weight: 500;
   font-size: 40px;
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
@@ -91,6 +93,7 @@
 }
 
 .tel-color {
+  font-weight: 500;
   font-size: 34px;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
@@ -113,6 +116,7 @@
 }
 
 .mail-color {
+  font-weight: 500;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
@@ -133,6 +137,7 @@
 }
 
 .menu-social-link {
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;

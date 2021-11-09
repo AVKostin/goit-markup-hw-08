@@ -632,6 +632,7 @@ textarea {
   position: absolute;
   padding: 48px 40px;
   display: flex;
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
@@ -647,6 +648,7 @@ textarea {
 }
 
 .menu-link {
+  font-weight: 500;
   font-size: 40px;
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
@@ -687,6 +689,7 @@ textarea {
 }
 
 .tel-color {
+  font-weight: 500;
   font-size: 34px;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
@@ -712,6 +715,7 @@ textarea {
 }
 
 .mail-color {
+  font-weight: 500;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
@@ -723,6 +727,7 @@ textarea {
 }
 
 .menu-social-link {
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
@@ -1280,6 +1285,7 @@ textarea {
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
   transition: box-shadow 300ms linear;
+  z-index: 1;
 }
 
 .our-projects-wrapper:hover,
