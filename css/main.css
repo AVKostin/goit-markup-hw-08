@@ -891,7 +891,7 @@ summary {
   margin-left: 8px;
   margin-bottom: 15px;
   border-radius: 4px;
-  padding: 6px 22px;
+  padding: 0 22px;
 }
 
 .portfolio-btn:hover, .portfolio-btn:focus {
