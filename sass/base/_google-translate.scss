@@ -36,7 +36,9 @@ body {
   transform: translateY(-50%);
   z-index: 999;
   display: flex;
-  // flex-direction: column;
+  margin-right: 0;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .language__img {
