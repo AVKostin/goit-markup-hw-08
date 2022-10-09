@@ -15,9 +15,11 @@
   @media screen and (min-width: 480px) {
     width: 450px;
   }
+
   @media screen and (min-width: 768px) {
     width: 354px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
@@ -26,31 +28,6 @@
 .our-commands {
   background-color: #f5f4fa;
 }
-
-// .cardholder {
-//   //   margin-bottom: 15px;
-//   border: 1px solid red;
-//   @media screen and (min-width: 480px) {
-//     width: 450px;
-//     background-color: teal;
-//     // margin-bottom: 15px;
-//   }
-//   @media screen and (min-width: 768px) {
-//     width: 270px;
-//     background-color: aqua;
-//     // margin-right: 20px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     width: 270px;
-//     background-color: burlywood;
-//   }
-// }
-
-// .our-commands {
-//   @media screen and (min-width: 768px) {
-//     // background-color: #f5f4fa;
-//   }
-// }
 
 .our-commands-title,
 .our-technology-title,
@@ -77,6 +54,7 @@
 
 .our-commands-bottom {
   padding-bottom: 24px;
+
   @media screen and (min-width: 1200px) {
     padding-bottom: 30px;
   }
