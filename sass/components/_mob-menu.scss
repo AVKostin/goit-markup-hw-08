@@ -7,10 +7,12 @@
   border: none;
   margin-left: auto;
   background-color: #ffffff;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
 .menu-close-btn {
   position: absolute;
   right: 8px;
@@ -24,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   &:hover,
   &:focus {
     fill: #2196f3;
@@ -41,9 +44,11 @@
   padding: 48px 40px;
   display: flex;
   z-index: 2;
+
   @media screen and (max-width: 767px) {
     overflow: hidden;
   }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -64,16 +69,14 @@
     letter-spacing: 0.02em;
     color: var(--header-text-color);
   }
+
   transition: color 300ms linear;
+
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
-
-// .backdrop.is-hidden .menu {
-//   transform: scale(2) rotate(1440deg);
-// }
 
 .mob-menu-item {
   margin-bottom: 32px;
@@ -100,6 +103,7 @@
   color: #2196f3;
   display: block;
   margin-bottom: 32px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
   }
@@ -121,15 +125,8 @@
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   color: #757575;
-  @media screen and (max-width: 480px) {
-  }
-}
 
-.mob-menu-list {
-  // margin-bottom: 100%;
-  // // display: flex;
-  // // flex-direction: column;
-  // justify-content: space-between;
+  @media screen and (max-width: 480px) {}
 }
 
 .menu-social-list {
@@ -146,15 +143,6 @@
   position: relative;
 }
 
-// .menu-social-link::after (:not:last-child) {
-//   content: "";
-//   width: 22px;
-//   height: 2px;
-//   display: block;
-//   background-color: royalblue;
-//   // transform: rotate(90deg);
-// }
-
 .menu-social-line::after {
   content: "|";
   position: absolute;
@@ -165,28 +153,13 @@
   right: -10%;
 }
 
-// .backdrop {
-
-// }
-
 .mob-menu {
-  // position: fixed;
-  // // width: 100vw;
-  // height: 100vh;
-  // width: 100vw;
-  // background-color: rgba(0, 0, 0, 0.2);
-  // top: 0;
-  // overflow-y: scroll;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
-
   &.is-hidden {
     opacity: 0;
     visibility: 0;
     pointer-events: none;
   }
+
   &.is-hidden .menu {
     transform: scale(2) rotate(1440deg);
   }
