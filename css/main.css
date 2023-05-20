@@ -49,7 +49,7 @@ img {
   height: auto;
 }
 
-/* ---------- Container and base style---------- */
+/* ---------- Base style---------- */
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -158,7 +158,12 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace,
+ SFMono-Regular,
+ Consolas,
+ 'Liberation Mono',
+ Menlo,
+ monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -704,7 +709,8 @@ summary {
   /* max-width: 200px; */
   /* height: 50px; */
   cursor: pointer;
-  transition: color 300ms linear, background-color 300ms linear, box-shadow 300ms linear;
+  transition: color 300ms linear, background-color 300ms linear,
+ box-shadow 300ms linear;
 }
 
 .header-btn {
@@ -877,7 +883,8 @@ summary {
   background: #f5f4fa;
   border: none;
   cursor: pointer;
-  transition: color 300ms linear, background-color 300ms linear, box-shadow 300ms linear;
+  transition: color 300ms linear, background-color 300ms linear,
+ box-shadow 300ms linear;
 }
 
 .btn-port:hover .btn-port:focus {
