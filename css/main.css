@@ -1555,7 +1555,7 @@ textarea {
   }
 }
 
-@media screen and (768px <= width) and (min-device-pixel-ratio: 2), screen and (768px <= width) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (768px <= width) and (min-device-pixel-ratio: 2), screen and (768px <= width) and (min-resolution: 192dpi), screen and (768px <= width) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/herobg/herobg-tab-2x.webp);
   }
@@ -1567,7 +1567,7 @@ textarea {
   }
 }
 
-@media screen and (1200px <= width) and (min-device-pixel-ratio: 2), screen and (1200px <= width) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (1200px <= width) and (min-device-pixel-ratio: 2), screen and (1200px <= width) and (min-resolution: 192dpi), screen and (1200px <= width) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/herobg/herobg-2x.webp);
   }
