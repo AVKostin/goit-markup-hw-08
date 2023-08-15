@@ -2212,7 +2212,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (768px <= width) {
   .footer-contacts-wrap {
     flex-basis: calc(100% / 2);
   }
