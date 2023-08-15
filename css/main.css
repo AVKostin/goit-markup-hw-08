@@ -2151,7 +2151,7 @@ textarea {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (1200px <= width) {
   .footer-list {
     padding-top: 20px;
     text-align: left;
@@ -2182,7 +2182,7 @@ textarea {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (1200px <= width) {
   .footer-logo {
     text-align: left;
   }
@@ -2218,7 +2218,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (1200px <= width) {
   .footer-contacts-wrap {
     display: flex;
   }
