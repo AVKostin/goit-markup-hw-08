@@ -2206,7 +2206,7 @@ textarea {
   justify-content: center;
 }
 
-@media screen and (mxn-width: 480px) {
+@media screen and (480px <= width) {
   .footer-contacts-wrap {
     flex-basis: calc(100% / 3);
   }
@@ -2248,13 +2248,13 @@ textarea {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (768px <= width) {
   .footer-contact-title {
     padding-top: 10px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (1200px <= width) {
   .footer-contact-title {
     text-align: left;
   }
@@ -2267,14 +2267,14 @@ textarea {
   width: 100%;
 }
 
-@media (min-width: 480px) {
+@media (480px <= width) {
   .footer-social-section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-@media (min-width: 768px) {
+@media (768px <= width) {
   .footer-social-section {
     justify-content: space-between;
     padding-top: 0px;
@@ -2283,7 +2283,7 @@ textarea {
   }
 }
 
-@media (min-width: 1200px) {
+@media (1200px <= width) {
   .footer-social-section {
     margin-right: 93px;
     width: auto;
