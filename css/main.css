@@ -1536,7 +1536,7 @@ textarea {
   padding-top: 118px;
 }
 
-@media screen and (1200px <= width) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-bottom: 200px;
     padding-top: 200px;
@@ -1549,25 +1549,25 @@ textarea {
   }
 }
 
-@media screen and (768px <= width) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/herobg/herobg-tab.webp);
   }
 }
 
-@media screen and (768px <= width) and (min-device-pixel-ratio: 2), screen and (768px <= width) and (min-resolution: 192dpi), screen and (768px <= width) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/herobg/herobg-tab-2x.webp);
   }
 }
 
-@media screen and (1200px <= width) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/herobg/herobg.webp);
   }
 }
 
-@media screen and (1200px <= width) and (min-device-pixel-ratio: 2), screen and (1200px <= width) and (min-resolution: 192dpi), screen and (1200px <= width) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/herobg/herobg-2x.webp);
   }
@@ -2151,7 +2151,7 @@ textarea {
   text-align: center;
 }
 
-@media screen and (1200px <= width) {
+@media screen and (min-width: 1200px) {
   .footer-list {
     padding-top: 20px;
     text-align: left;
@@ -2182,7 +2182,7 @@ textarea {
   color: var(--accent-color);
 }
 
-@media screen and (1200px <= width) {
+@media screen and (min-width: 1200px) {
   .footer-logo {
     text-align: left;
   }
@@ -2206,19 +2206,19 @@ textarea {
   justify-content: center;
 }
 
-@media screen and (480px <= width) {
+@media screen and (mxn-width: 480px) {
   .footer-contacts-wrap {
     flex-basis: calc(100% / 3);
   }
 }
 
-@media screen and (768px <= width) {
+@media screen and (min-width: 768px) {
   .footer-contacts-wrap {
     flex-basis: calc(100% / 2);
   }
 }
 
-@media screen and (1200px <= width) {
+@media screen and (min-width: 1200px) {
   .footer-contacts-wrap {
     display: flex;
   }
@@ -2248,13 +2248,13 @@ textarea {
   text-align: center;
 }
 
-@media (768px <= width) {
+@media (min-width: 768px) {
   .footer-contact-title {
     padding-top: 10px;
   }
 }
 
-@media screen and (1200px <= width) {
+@media screen and (min-width: 1200px) {
   .footer-contact-title {
     text-align: left;
   }
@@ -2267,14 +2267,14 @@ textarea {
   width: 100%;
 }
 
-@media (480px <= width) {
+@media (min-width: 480px) {
   .footer-social-section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-@media (768px <= width) {
+@media (min-width: 768px) {
   .footer-social-section {
     justify-content: space-between;
     padding-top: 0px;
@@ -2283,7 +2283,7 @@ textarea {
   }
 }
 
-@media (1200px <= width) {
+@media (min-width: 1200px) {
   .footer-social-section {
     margin-right: 93px;
     width: auto;
