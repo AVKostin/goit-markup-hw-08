@@ -27,6 +27,7 @@
       ),
       url(..//images/herobg/herobg-mob-2x.webp);
   }
+  
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -43,7 +44,7 @@
         url(..//images/herobg/herobg-tab-2x.webp);
     }
   }
-  
+
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
