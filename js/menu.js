@@ -18,10 +18,8 @@
   };
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
-
   
 })();
-
 
 // (() => {
 //   const refs = {
