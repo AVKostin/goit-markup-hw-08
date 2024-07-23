@@ -7,6 +7,7 @@
   justify-content: center;
   background-color: var(--backgound-color-base);
   transition: background-color 300ms ease-in-out fill 300ms ease;
+  
   &:hover,
   &:focus {
     background-color: var(--accent-color);
